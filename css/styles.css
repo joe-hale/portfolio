@@ -1,0 +1,146 @@
+body {
+    font-size: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blurb {
+    max-width: 33em;
+}
+
+.content-wrapper {
+    margin-left: 280px;
+    padding: 40px;
+    position: absolute;
+}
+
+.header-nav li {
+    display: inline;
+}
+
+/* Flexbox */
+
+.errorland-gap {
+    margin: 0 0 1em 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    padding: 4px 4px 50px 4px;
+    top: 0;
+    bottom: 0;
+}
+
+.homepage-image {
+    margin-left: 280px;
+    padding: 40px;
+    position: absolute;
+}
+
+/* Media Queries */
+
+/* Tablet + < */
+
+@media only screen and (min-width: 799px) {
+ 
+.mobile-nav {
+        display: none;
+    }
+
+.content-wrapper {
+    font-size: 1.25em;
+    }    
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 798px) {
+    
+.homepage-image {
+    display: none;
+}
+
+/* Hide the sidebar */    
+    
+.flexbox {
+    display: none;
+    }
+
+.content-wrapper {
+    margin: auto;
+    margin-top: 5px;
+    padding: 0.25em;
+    position: inherit;
+    max-width: 100;
+    }
+
+/* Sidebar for home page */ 
+
+.sidebar {
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    padding: 4px 4px 50px 4px;
+    top: 0;
+    bottom: 0;
+    }
+}
+
+/* Hamburger s */
+
+/* Style the nav menu */
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+/* Hide the links inside the nav menu (except for logo/home) */
+
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style nav menu links */
+
+.topnav a {
+  color: blue;
+  padding: 4px;   
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 2em;    
+  display: block;
+}
+
+.topnav a.active {
+    font-size: 2em;
+    color: black;
+}
+
+/* Style the hamburger menu */
+
+.topnav a.icon {    
+  color: blue;    
+  background: white;
+  font-size: 2em;  
+  display: block;
+  position: absolute;    
+  right: 0; 
+  top: 0;
+}

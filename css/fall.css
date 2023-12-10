@@ -1,0 +1,98 @@
+body {
+    font-size: 100%;
+    line-height: 1.5em;
+    text-indent: 2em;
+}    
+    
+h1   {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin: 0 auto 75px;
+    text-align: center;
+    text-indent: 0;
+}
+
+h5   {
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    text-align: center;
+    text-indent: 0;
+}  
+    
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+    
+p   {
+    margin: 0;
+}
+
+pre {
+    line-height: 0;
+    }    
+    
+.big-brook {
+    display: none;
+    text-indent: 0;
+} 
+
+.fall {
+    display: block;
+    margin: 0 auto;
+    transform: rotate(180deg);
+    width: 95%;
+} 
+
+.first {
+    text-indent: 0;
+}    
+    
+.little-brook {
+    text-align: center;
+    text-indent: 0;
+} 
+
+.outer {
+    display: block;
+    margin: 75px 0 75px 0;    
+    }    
+    
+.white-rabbit {
+    margin: 0 auto 75px;
+    }      
+    
+/*Media Queries*/
+    
+@media only screen and (min-width: 414px) {
+   
+.big-brook {
+    display: block;
+    text-align: center;
+} 
+    
+.little-brook {
+    display: none;
+}
+    
+.fall {
+    font-size: 1.25em;
+    line-height: 1.25em
+}
+}
+    
+@media only screen and (min-width: 580px) {
+    
+h1   {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+} 
+    
+.fall {
+    width: 23em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}    
+}
