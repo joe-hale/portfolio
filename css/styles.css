@@ -58,10 +58,6 @@ ul {
 
 @media only screen and (min-width: 799px) {
  
-.mobile-nav {
-        display: none;
-    }
-
 .content-wrapper {
     font-size: 1.25em;
     }    
@@ -89,58 +85,29 @@ ul {
     max-width: 100;
     }
 
-/* Sidebar for home page */ 
-
-.sidebar {
-    width: 100%;
-    position: fixed;
-    overflow-y: scroll;
-    padding: 4px 4px 50px 4px;
-    top: 0;
-    bottom: 0;
-    }
-}
-
-/* Hamburger s */
-
-/* Style the nav menu */
-
-.topnav {
-  overflow: hidden;
-  background-color: white;
-  position: relative;
-}
-
-/* Hide the links inside the nav menu (except for logo/home) */
-
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style nav menu links */
-
-.topnav a {
-  color: blue;
-  padding: 4px;   
-  text-decoration: none;
-  font-size: 1em;
-  line-height: 2em;    
-  display: block;
-}
-
-.topnav a.active {
-    font-size: 2em;
-    color: black;
-}
-
-/* Style the hamburger menu */
-
-.topnav a.icon {    
-  color: blue;    
-  background: white;
-  font-size: 2em;  
-  display: block;
-  position: absolute;    
-  right: 0; 
+.nav-toggle {
+  display: none; /* hidden on desktop */
+  position: sticky;
   top: 0;
+  background: white; /* match your site background */
+  z-index: 10;
+}
+
+@media (max-width: 798px) {
+  .nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .sidebar nav ul {
+    display: none;
+  }
+
+  .sidebar.open nav ul {
+    display: block;
+  }
 }

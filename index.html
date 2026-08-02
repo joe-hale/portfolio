@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -48,13 +50,11 @@
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Joe Hale's Art and Writing Portfolio Website">
         <meta name="author" content="Joe Hale">
-        <script src="scripts/include-html.js"></script>
         <!--<base href="https://www.joehale.info">-->
         <title>Joe Hale</title>
     </head>
     <body>
-        <div w3-include-html="flexbox.html" class="sidebar"></div>        
-        <script>includeHTML();</script>
+        {% include sidebar.html %}
         <div class="homepage-image"><a href="painting/gone-beyond.html"><img src="images/gone-beyond.jpg" alt="Gone Beyond painting" width="1019" height="1019"></a></div>
     </body>
 </html>
