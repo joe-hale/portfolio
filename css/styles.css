@@ -38,12 +38,17 @@ ul {
     padding: 4px 4px 50px 4px;
     top: 0;
     bottom: 0;
+    background: white;
 }
 
 .homepage-image {
     margin-left: 280px;
     padding: 40px;
     position: absolute;
+}
+
+.topnav {
+    display: none;
 }
 
 /* Media Queries */
@@ -54,18 +59,6 @@ ul {
 .content-wrapper {
     font-size: 1.25em;
 }
-}
-
-.nav-toggle {
-    display: none;
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 10;
-    font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
 }
 
 /* Mobile */
@@ -84,15 +77,34 @@ ul {
     max-width: 100;
 }
 
-.nav-toggle {
-    display: block;
-}
-
-.sidebar nav ul {
+body:not(.home) .sidebar {
     display: none;
 }
 
-.sidebar.open nav ul {
+body:not(.home) .topnav {
     display: block;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0.5rem;
 }
+
+#myLinks {
+    display: none;
+    flex-direction: column;
+}
+
+#myLinks.show {
+    display: flex;
+}
+
+.topnav .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    float: right;
+    background: none;
+    border: none;
+}
+
 }
