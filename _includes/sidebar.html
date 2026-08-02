@@ -78,9 +78,7 @@
     <a href="https://objkt.com/profile/tz1XSZhFyN9upJyNibDrL95R1DXNZ1sNw7te/created" title="Visit Objkt profile">Objkt</a>
     <a href="https://www.youtube.com/channel/UC7sUhHJEJJJwZrv3hMSQ7HQ" title="Visit YouTube channel">Youtube</a>
   </div>
-  <a href="javascript:void(0);" class="icon" onclick="document.getElementById('myLinks').classList.toggle('show')">
-    ☰
-  </a>
+    <a href="javascript:void(0);" class="icon" onclick="this.textContent = this.textContent.trim() === '☰' ? '✕' : '☰'; document.getElementById('myLinks').classList.toggle('show')">☰</a>
 </div>
 <!--end of mobile nav-->
 </div>
