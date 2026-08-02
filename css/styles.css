@@ -82,7 +82,8 @@ body:not(.home) .sidebar {
 }
 
 body:not(.home) .topnav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: white;
     position: sticky;
     top: 0;
@@ -102,7 +103,6 @@ body:not(.home) .topnav {
 .topnav .icon {
     font-size: 1.5rem;
     cursor: pointer;
-    float: right;
     background: none;
     border: none;
 }
