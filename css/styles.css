@@ -88,7 +88,7 @@ body:not(.home) .topnav {
     position: sticky;
     top: 0;
     z-index: 10;
-    padding: 4px;
+    padding: 10px 4px;
 }
 
 #myLinks {
@@ -107,12 +107,14 @@ body:not(.home) .topnav {
 }
 
 .topnav .icon {
-    font-size: 2em;
-    color: black;
-    text-decoration: none;
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    font-size: 1.5rem;
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 20;
 }
 
 .topnav h1 {
