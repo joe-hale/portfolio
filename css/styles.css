@@ -94,14 +94,22 @@ body:not(.home) .topnav {
 #myLinks {
     display: none;
     flex-direction: column;
+    line-height: 1.5em;
 }
 
 #myLinks.show {
     display: flex;
 }
 
+.active {
+    font-size: 2em;
+    color: black;
+    
+}
+
 .topnav .icon {
-    font-size: 1.5rem;
+    font-size: 2em;
+    color: black;
     cursor: pointer;
     background: none;
     border: none;
