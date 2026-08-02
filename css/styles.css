@@ -88,11 +88,11 @@ ul {
     display: block;
 }
 
-.sidebar nav ul {
+.sidebar nav {
     display: none;
 }
 
-.sidebar.open nav ul {
+.sidebar.open nav {
     display: block;
 }
 }
