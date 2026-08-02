@@ -38,7 +38,6 @@ ul {
     padding: 4px 4px 50px 4px;
     top: 0;
     bottom: 0;
-    background: white;
 }
 
 .homepage-image {
@@ -89,12 +88,11 @@ ul {
     display: block;
 }
 
-.sidebar-content {
+.sidebar nav {
     display: none;
 }
 
-.sidebar.open .sidebar-content {
+.sidebar.open nav {
     display: block;
 }
-
 }
