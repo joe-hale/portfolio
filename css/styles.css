@@ -88,14 +88,13 @@ body:not(.home) .topnav {
     position: sticky;
     top: 0;
     z-index: 10;
-    padding: 0.5rem;
+    padding: 4px;
 }
 
 #myLinks {
     display: none;
     flex-direction: column;
     line-height: 1.5em;
-    padding: 4px 4px 50px 4px;
 }
 
 #myLinks.show {
