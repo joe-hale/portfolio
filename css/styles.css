@@ -95,6 +95,7 @@ body:not(.home) .topnav {
     display: none;
     flex-direction: column;
     line-height: 1.5em;
+    padding: 4px;
 }
 
 #myLinks.show {
