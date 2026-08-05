@@ -1,1 +1,4 @@
 title: Joe Hale
+timezone: Europe/London
+plugins:
+  - jekyll-sitemap
